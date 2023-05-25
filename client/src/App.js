@@ -1,10 +1,10 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./pages/home.js";
-import { Auth } from "./pages/auth.js";
-import { CreateRecipe } from "./pages/createRecipe.js";
-import { SavedRecipes } from './pages/savedRecipes.js';
-import { Navbar } from './components/navbar.js';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
+import { Navbar } from "./components/navbar";
+import { Auth } from "./pages/auth";
+import { CreateRecipe } from "./pages/create-recipe";
+import { Home } from "./pages/home";
+import { SavedRecipes } from "./pages/saved-recipes";
 
 function App() {
   return (
@@ -13,9 +13,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/create-recipe" element={<CreateRecipe />} />
+          <Route path="/saved-recipes" element={<SavedRecipes />} />
           <Route path="/auth" element={<Auth />} />
-          <Route path="/createRecipe" element={<CreateRecipe />} />
-          <Route path="/savedRecipes" element={<SavedRecipes />} />
         </Routes>
       </Router>
     </div>

@@ -79,8 +79,7 @@ const Register = () => {
         username,
         password,
       });
-      alert("Registration Completed, Welcome!");
-      navigate("/");
+      alert("Registration Completed! Now login.");
     } catch (error) {
       console.error(error);
     }

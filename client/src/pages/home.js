@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { getUserID } from "../utils/getUserID.js";
+import { useGetUserID } from "../hooks/useGetUserID";
 import axios from "axios";
 
 export const Home = () => {
   const [recipes, setRecipes] = useState([]);
-  const [savedRecipes, setSavedRecipes] = useState([]);
+  const [savedRecipes, setSavedRecipes] = useState(null); // Change initial state to null
 
-  const userID = getUserID();
+  const userID = useGetUserID();
 
   useEffect(() => {
     const fetchRecipes = async () => {
@@ -45,7 +45,7 @@ export const Home = () => {
     }
   };
 
-  const isRecipeSaved = (id) => savedRecipes.includes(id);
+  const isRecipeSaved = (id) => savedRecipes && savedRecipes.includes(id); // Add null check
 
   return (
     <div>
