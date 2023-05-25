@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./pages/home";
-import { Auth } from "./pages/auth";
-import { CreateRecipe } from "./pages/createRecipe";
-import { SavedRecipes } from './pages/savedRecipes';
-import { Navbar } from './components/navbar';
+import { Home } from "./pages/home.js";
+import { Auth } from "./pages/auth.js";
+import { CreateRecipe } from "./pages/createRecipe.js";
+import { SavedRecipes } from './pages/savedRecipes.js';
+import { Navbar } from './components/navbar.js';
 
 function App() {
   return (
