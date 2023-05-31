@@ -15,7 +15,6 @@ const recipeSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-
   imageUrl: {
     type: String,
     required: true,
@@ -31,4 +30,4 @@ const recipeSchema = mongoose.Schema({
   },
 });
 
-export const RecipesModel = mongoose.model("Recipes", recipeSchema);
+export const RecipeModel = mongoose.model("Recipes", recipeSchema);
