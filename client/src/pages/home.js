@@ -23,6 +23,7 @@ export const Home = () => {
         const response = await axios.get(
           `http://localhost:3001/recipes/savedRecipes/ids/${userID}`
         );
+        console.log("test", response.data);
         setSavedRecipes(response.data.savedRecipes);
       } catch (err) {
         console.log(err);

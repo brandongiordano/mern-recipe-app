@@ -62,6 +62,23 @@ input {
   text-decoration: none;
 }
 
+.navbar > a:hover {
+  color: red;
+  transition: color 0.3s;
+}
+
+.navbar button {
+  margin: 0;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  border-style: none;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -101,6 +118,10 @@ h2 {
   margin-top: 0;
 }
 
+h3 {
+  text-align: center;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -114,4 +135,23 @@ img {
 p {
   max-width: 400px;
   font-size: 12px;
+}
+
+#createbtn {
+  margin-top: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#logoutBtn {
+  font-size:x-large;
+  margin: 10px;
+  padding: 0px;
+}
+
+#logoutBtn:hover {
+  color: red;
+  transition: color 0.3s;
 }

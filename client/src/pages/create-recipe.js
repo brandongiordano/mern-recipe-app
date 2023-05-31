@@ -56,6 +56,7 @@ export const CreateRecipe = () => {
   return (
     <div className="create-recipe">
       <h2>Create A Recipe</h2>
+      <h3>Share your delicious recipes with foodies just like you!</h3>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input
@@ -75,7 +76,7 @@ export const CreateRecipe = () => {
             onChange={(event) => handleIngredientChange(event, index)}
           />
         ))}
-        <button type="button" onClick={handleAddIngredient}>
+        <button id="createbtn" type="button" onClick={handleAddIngredient}>
           Add Ingredient
         </button>
         <label htmlFor="instructions">Instructions</label>
@@ -101,7 +102,7 @@ export const CreateRecipe = () => {
           value={recipe.cookingTime}
           onChange={handleChange}
         />
-        <button type="submit">Create Recipe</button>
+        <button id="createbtn" type="submit">Create Recipe</button>
       </form>
     </div>
   );

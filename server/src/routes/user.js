@@ -39,6 +39,7 @@ router.post("/login", async (req, res) => {
 
 export { router as userRouter };
 
+// Verification Middleware
 export const verifyToken = (req, res, next) => {
   const authHeader = req.headers.authorization;
   if (authHeader) {
