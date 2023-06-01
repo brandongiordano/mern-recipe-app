@@ -1,7 +1,7 @@
 {
     "name": "mern-recipe-app",
     "version": "1.0.0",
-    "homepage": "https://brandongiordano.github.io/mern-recipe-app",
+    "homepage": "http://brandongiordano.github.io/mern-recipe-app",
     "description": "A site asllowing users to uplaod and save meal recipes",
     "main": "server/server.js",
     "scripts": {
