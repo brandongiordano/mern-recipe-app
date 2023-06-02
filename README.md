@@ -1,1 +1,42 @@
-# mern-recipe-app
+# Brandon's Table
+
+## Description
+
+This is a website that allows users to create recipes to share with other foodies like themselves and save them to their personal recipebook. This project was created with the MERN stack and some auxillery packages like bcrypt and jwebtoken.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Future Development](#future-development)
+- [Credits](#credits)
+- [Questions](#questions)
+- [Screenshots](#screenshots)
+
+## Installation
+
+To install dependencies, run the following:
+`type npm install in the console`
+
+## Usage
+
+In order to run the application type `npm run develop` in the console after installing dependencies to run the front-end and back-end servers concurrently.
+
+## Future Development
+
+Adding email to user account
+Allowing images to be saved in the database not just the URL
+Full Deployment
+Refined UI
+Add descriptions to the Recipes
+Add ability for user's to review recipes
+
+## Credits
+
+Brandon Giordano
+
+## Questions
+
+If you have any questions you can contact us at bgiordano9917@aol.com or via my GitHub: brandongiordano
+
+# Screenshots
