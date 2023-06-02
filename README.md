@@ -1,4 +1,4 @@
-# Brandon's Table
+# Community Table
 
 ## Description
 
