@@ -40,4 +40,5 @@ Brandon Giordano
 If you have any questions you can contact us at bgiordano9917@aol.com or via my GitHub: brandongiordano
 
 # Screenshots
-![2023-06-02 (1)](https://github.com/brandongiordano/mern-recipe-app/assets/110688825/6d5e6749-67ca-4d58-bb70-e59dd79dbf00)
+![2023-06-02 (1)](https://github.com/brandongiordano/mern-recipe-app/assets/110688825/12ba387e-108c-4fd7-84e3-dd597ca9c1fe)
+
