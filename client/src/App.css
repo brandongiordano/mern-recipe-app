@@ -12,6 +12,15 @@ body {
   padding: 0;
 }
 
+#recipeColumn {
+  /* background-color: pink; */
+  width: 50%;
+}
+
+#savebtn {
+  background-color: red;
+}
+
 .auth {
   display: flex;
   justify-content: center;
@@ -59,6 +68,7 @@ input {
   align-items: center;
   color: white;
   text-decoration: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 #links {
@@ -130,7 +140,7 @@ ul {
 }
 
 li {
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   padding: 10px;
   margin-bottom: 10px;
 }

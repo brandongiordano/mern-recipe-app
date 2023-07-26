@@ -49,24 +49,32 @@ export const Home = () => {
   const isRecipeSaved = (id) => savedRecipes && savedRecipes.includes(id); // Add null check
 
   return (
-    <div>
+    <div id="recipeColumn">
       <h1>Recipes</h1>
       <ul>
         {recipes.map((recipe) => (
           <li key={recipe._id}>
             <div>
               <h2>{recipe.name}</h2>
-              <button
+              <img src={recipe.imageUrl} alt={recipe.name} />
+              {/* <button
+                id="savebtn"
+                onClick={() => saveRecipe(recipe._id)}
+                disabled={isRecipeSaved(recipe._id)}
+              >
+                {isRecipeSaved(recipe._id) ? "Saved" : "Save"}
+              </button> */}
+            </div>
+            <button
+                id="savebtn"
                 onClick={() => saveRecipe(recipe._id)}
                 disabled={isRecipeSaved(recipe._id)}
               >
                 {isRecipeSaved(recipe._id) ? "Saved" : "Save"}
               </button>
-            </div>
             <div className="instructions">
               <p>{recipe.instructions}</p>
             </div>
-            <img src={recipe.imageUrl} alt={recipe.name} />
             <p>Cooking Time: {recipe.cookingTime} minutes</p>
           </li>
         ))}
