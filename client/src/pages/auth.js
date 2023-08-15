@@ -95,7 +95,7 @@ const Form = ({username, setUsername, password, setPassword, label, onSubmit}) =
             onChange={(event) => setPassword(event.target.value)}
           />
         </div>
-        <button type="submit">Register</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
